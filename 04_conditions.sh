@@ -40,6 +40,6 @@ false && echo 'yay' || echo 'nay'
 # this able you to chain your commands
 # sometime you need run command and continue, no matter it was succeded or not
 # here you must use ';' to separate commands
-true && echo 'yay' || echo 'nay' ; echo 'run anyway'
-true ; echo 'run anyway'
-false ; echo 'run anyway'
+true && echo 'yay' || echo 'nay'; echo 'run anyway'
+true; echo 'run anyway'
+false; echo 'run anyway'
