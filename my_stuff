@@ -1,0 +1,6 @@
+MY_VAR1='foo'
+MY_VAR2='bar'
+
+myFoonc() {
+  echo 'Dis foonc workin fine'
+}
