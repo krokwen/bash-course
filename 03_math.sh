@@ -7,14 +7,14 @@ B=2
 C=$A+$B
 echo $C
 
-D=$[$A+$B]
+D=$(($A + $B))
 echo $D
 
-D=$(($A+$B))
+D=$(($A + $B))
 echo $D
 
 # also you can do math without $ at variables, and use spaces inside of epression
-D=$[ A + B ]
+D=$((A + B))
 echo $D
 
 # result without []
@@ -23,15 +23,15 @@ echo $C
 echo $D
 
 # multiplication
-echo $[$A*$B]
+echo $(($A * $B))
 
 # division
 # ooops, you can have only integers
-echo $[$A/$B]
+echo $(($A / $B))
 # that one will work fine
-echo $[6/$B]
+echo $((6 / $B))
 
 # 'mod' operation
-echo $[10%2]
-echo $[10%3]
-echo $[10%4]
+echo $((10 % 2))
+echo $((10 % 3))
+echo $((10 % 4))

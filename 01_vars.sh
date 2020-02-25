@@ -21,7 +21,6 @@ echo "date command is \"${VAR_DATE}\""
 # string susbtiution not working with single quotes, this string will immutable
 echo 'date command is "${VAR_DATE}"'
 
-
 # prepare default value for variable
 # useful when command line args used
 
@@ -42,4 +41,3 @@ actual_param='foo'
 eval $PARAM_NAME=\$$VALUE
 # 'foo' will be here
 echo $param
-
