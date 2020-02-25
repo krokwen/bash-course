@@ -47,9 +47,3 @@ echo $MY_VAR3
 echo "one long argument" \
   "another long arg" \
   "one more"
-
-# in this case you can comment out any line to disable segment.
-
-echo "one long argument" \
-#  "another logn arg" \
-  "one more"
