@@ -1,6 +1,16 @@
 #!/usr/bin/env bash
 
-date
+# printing text. use quotes on echo if you need to save text structure
+TEXT="foo
+bar
+baz"
+
+# this will retur a single string like "foo bar baz"
+echo $TEXT
+# but this will print text with wraps
+echo "$TEXT"
+# ... or this
+echo "${TEXT}"
 
 #default args
 echo $0
