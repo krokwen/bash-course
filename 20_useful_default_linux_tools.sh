@@ -20,7 +20,13 @@ string 2
 string 3
 string foo
 string bar
-string baz"
+string baz
+string qwe
+string asd
+string zxc
+string 123
+string 456
+string 678"
 
 # sort strings from stdin or file
 echo "$TEXT" | sort
@@ -82,3 +88,15 @@ find ./path/to/dir -type f -mindepth 2 -maxdepth 4 -name *.tar.* -exec cp {} /ba
 
 # if you need just create file - use touch
 touch /tmp/foo
+
+# text truncating
+
+# truncate from beginning
+echo "$TEXT" | head # by default shows first 10 strings
+echo "$TEXT" | head -n 5 # will show first 5 strings
+
+# truncate from end
+echo "$TEXT" | tail # by default shows last 10 strings
+echo "$TEXT" | tail -n 5 # will show last 5 strings
+
+tail -f /var/log/my_log # will read log file from last 10 strings and continiously  print new strings
