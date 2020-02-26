@@ -38,6 +38,9 @@ echo $VAR_B
 PARAM_NAME='param'
 VALUE='actual_param'
 actual_param='foo'
+eval $PARAM_NAME=$VALUE
+# 'actual_param' will be here
+
 eval $PARAM_NAME=\$$VALUE
 # 'foo' will be here
 echo $param
