@@ -100,3 +100,7 @@ echo "$TEXT" | tail # by default shows last 10 strings
 echo "$TEXT" | tail -n 5 # will show last 5 strings
 
 tail -f /var/log/my_log # will read log file from last 10 strings and continiously  print new strings
+
+# for viewing text you can use 'less'. this tool using vim-like keyboard shortcuts, so this is pretty comfortable to use.
+less /var/log/my_log
+echo "$TEXT" | less
