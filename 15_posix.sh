@@ -13,9 +13,11 @@
 
 # full access is 7, read and execute only is 5, etc...
 
-# you can see acls like 755 on files, it means that owner has a full access on this file, but group and others has a read only
+# you can see acls like 755 on files, it means that owner has a full access on this file, but group and others
+# has a read only access
 # if it like 644, this means that file is not executable, and you can't run it before you fix access.
-# NOTE that directories MUST have an execution bit, otherwise you can't get into it, even if you have a read and write access
+# NOTE that directories MUST have an execution bit, otherwise you can't get into it, even if you have a read
+# and write access
 
 # to check acls on file you can use ls with flag -l
 ls -l ./path/to/file/or/dir

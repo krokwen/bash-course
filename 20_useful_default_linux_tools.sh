@@ -83,7 +83,8 @@ echo "$TEXT" | awk {'print $2 $1'}
 
 # searching for files and operating on them
 
-# this command will find all files by pattern *.tar.* at minimum 2 dirs and maximum 4 dirs depth in selected directory, then will copy these files to /backup/ directory
+# this command will find all files by pattern *.tar.* at minimum 2 dirs and maximum 4 dirs depth in selected directory,
+# then will copy these files to /backup/ directory
 find ./path/to/dir -type f -mindepth 2 -maxdepth 4 -name *.tar.* -exec cp {} /backup/{} \;
 
 # if you need just create file - use touch

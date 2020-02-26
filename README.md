@@ -20,4 +20,4 @@ Contents:
 * Environment variables
 * POSIX introduction
 * Useful standard linux tools
-* Other stuff and tricks
+* Other stuff and tricks``
