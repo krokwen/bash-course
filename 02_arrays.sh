@@ -53,7 +53,6 @@ declare -A MY_HASH
 # only if you properly defined a hash, then you can write to hash
 MY_HASH=(['qwe']='asd' ['zxc']='fgh' ['foo']='bar')
 
-echo -e "\n"
 # you can work with hashes as same as with arrays
 # @, *, quotes will make same effect
 # all elements
