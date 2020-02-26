@@ -18,4 +18,6 @@ Contents:
 * Command line arguments
   * Named arguments
 * Environment variables
-* Other stuff
+* POSIX introduction
+* Useful standard linux tools
+* Other stuff and tricks
