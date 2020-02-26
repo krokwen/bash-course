@@ -41,3 +41,18 @@ actual_param='foo'
 eval $PARAM_NAME=\$$VALUE
 # 'foo' will be here
 echo $param
+
+# bash constriction for string formatting
+
+# in case of pasing command line args will be very useful string triming
+VAR_ARG="--foo=bar"
+echo ${VAR_ARG#--*=} # this will trim from left by pattern '--*=', i.e. only value of arg will left
+
+# to extract an arg key you can use this
+echo ${VAR_ARG%=*} # this will trim from righ by pattern '=*', i.e. only arg will left
+
+# or you need to count a length of string
+echo ${#VAR_ARG}
+
+# also you can use printf, it works pretty similar to C printf, for example
+printf "%s bar %s" 'foo' 'baz'
