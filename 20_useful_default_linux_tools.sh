@@ -83,8 +83,8 @@ echo "$TEXT" | awk {'print $2 $1'}
 
 # searching for files and operating on them
 
-# this command will find all files by pattern *.tar.* at minimum 2 dirs and maximum 4 dirs depth in selected directory,
-# then will copy these files to /backup/ directory
+# this command will find all files by pattern *.tar.* at minimum 2 dirs
+# and maximum 4 dirs depth in selected directory, then will copy these files to /backup/ directory
 find ./path/to/dir -type f -mindepth 2 -maxdepth 4 -name *.tar.* -exec cp {} /backup/{} \;
 
 # if you need just create file - use touch
@@ -100,8 +100,9 @@ echo "$TEXT" | head -n 5 # will show first 5 strings
 echo "$TEXT" | tail # by default shows last 10 strings
 echo "$TEXT" | tail -n 5 # will show last 5 strings
 
-tail -f /var/log/my_log # will read log file from last 10 strings and continiously  print new strings
+tail -f /var/log/my_log # will read log file from last 10 strings and continiously print new strings
 
-# for viewing text you can use 'less'. this tool using vim-like keyboard shortcuts, so this is pretty comfortable to use.
+# for viewing text you can use 'less'. this tool using vim-like keyboard shortcuts,
+# so this is pretty comfortable to use.
 less /var/log/my_log
 echo "$TEXT" | less

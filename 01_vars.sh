@@ -3,7 +3,8 @@
 # declaring variables
 # you MUST use assignment with no spaces
 
-# this will not work as you expect, it will try to execute command "VAR_DATE" and pass params "= 'date'" to it
+# this will not work as you expect, it will try to execute command "VAR_DATE"
+# and pass params "= 'date'" to it
 VAR_DATE = 'date'
 
 # but this will
@@ -49,7 +50,8 @@ echo $param
 
 # in case of pasing command line args will be very useful string triming
 VAR_ARG="--foo=bar"
-echo ${VAR_ARG#--*=} # this will trim from left by pattern '--*=', i.e. only value of arg will left
+echo ${VAR_ARG#--*=} # this will trim from left by pattern '--*=',
+# i.e. only value of arg will left
 
 # to extract an arg key you can use this
 echo ${VAR_ARG%=*} # this will trim from righ by pattern '=*', i.e. only arg will left

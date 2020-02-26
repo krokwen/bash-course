@@ -5,7 +5,8 @@
 # >0 - is fail
 # maximum value is 255
 
-# you can use different exit codes in different cases, for example exit 10 when no config file, or something like this
+# you can use different exit codes in different cases, for example exit 10 when no config file,
+# or something like this
 
 # to determine which exit code was last time you can read a $? variable
 true ; echo $?

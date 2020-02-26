@@ -31,7 +31,8 @@ cat ./unexistent_file 2>./file
 # stderr to pipe
 
 # this is a bit trickier, becaouse pipe catches only stdout, not stderr
-# here you need redirect both stdin and stdout to /dev/null, then catch this stream and redirect to pipe
+# here you need redirect both stdin and stdout to /dev/null,
+# then catch this stream and redirect to pipe
 cat ./unexistent_file 2>&1 >/dev/null | cat
 
 # redirect both stdout and stderr to same file

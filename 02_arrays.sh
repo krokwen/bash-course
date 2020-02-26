@@ -25,7 +25,8 @@ echo ${MY_ARRAY[@]}
 # and if you use *, then you get just a string of space separated whole array elements
 echo ${MY_ARRAY[*]}
 
-# note the difference between @ and *, when you using elemets with spaces and iterate with loop over array
+# note the difference between @ and *, when you using elemets with spaces
+# and iterate with loop over array
 
 # also using quotes with array make sense
 # if you iterate over ${MY_ARRAY[@]}, you'll iterate over array string by words
@@ -64,7 +65,8 @@ echo ${!MY_HASH[@]}
 # If you print array variable, then you get only first element
 echo $MY_HASH
 
-# if you need iterate over hash, then you need iterate over hash keys, then you can get a value by key
+# if you need iterate over hash, then you need iterate over hash keys,
+# then you can get a value by key
 for key in "${!MY_HASH[@]}"; do
   echo "$key => ${MY_HASH[$key]}"
 done
