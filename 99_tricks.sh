@@ -29,7 +29,7 @@ kill -s SIGUSR1 $$
 MY_VAR=$(echo "my value")
 echo $MY_VAR
 # more risky way
-MY_VAR=$(echo "my value")
+MY_VAR=`echo "my value"`
 echo $MY_VAR
 
 # `` will evaluate its content and pass to its place; use it carefuly

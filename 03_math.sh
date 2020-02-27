@@ -7,7 +7,7 @@ B=2
 C=$A+$B
 echo $C
 
-D=$(($A + $B))
+D=$[$A + $B]
 echo $D
 
 D=$(($A + $B))
@@ -15,11 +15,6 @@ echo $D
 
 # also you can do math without $ at variables, and use spaces inside of epression
 D=$((A + B))
-echo $D
-
-# result without []
-echo $C
-# result with []
 echo $D
 
 # multiplication

@@ -56,6 +56,8 @@ echo ${VAR_ARG#--*=} # this will trim from left by pattern '--*=',
 # to extract an arg key you can use this
 echo ${VAR_ARG%=*} # this will trim from righ by pattern '=*', i.e. only arg will left
 
+# if you need greed replace, use # and % twice
+
 # or you need to count a length of string
 echo ${#VAR_ARG}
 

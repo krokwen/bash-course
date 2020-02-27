@@ -15,7 +15,6 @@ echo ${MY_ARRAY[2]}
 # append to array
 MY_ARRAY+=('bar')
 
-echo -e "\n"
 # If you print array variable, then you get only first element
 echo $MY_ARRAY
 # You need {} and @ or * key to get all elements

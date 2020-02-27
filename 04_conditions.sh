@@ -23,6 +23,16 @@ else
   echo 'This is false'
 fi
 
+# 'else if'
+
+if false; then
+  echo "This is true"
+elif true; then
+  echo "This is realy true"
+else
+  echo "No more truth"
+fi
+
 # inline conditions
 [[ $A -gt $B ]] && echo 'This is true' || echo 'This is false'
 # another inline condition. [[]] is an alias to 'test'

@@ -51,7 +51,7 @@ echo "$TEXT" | sort | uniq -c
 # if you want use uniq on file, just run uniq ./path/to/file
 
 # search for substring or regex in text
-echo "$TEXT" | grep "foo"
+echo "$TEXT" | grep ./file -e "foo"
 # exlude substring
 echo "$TEXT" | grep -v -e "bar"
 # recursively serarch in directory
@@ -78,7 +78,7 @@ EOL
 # working with text columns
 
 # print 2nd column, then first
-echo "$TEXT" | awk {'print $2 $1'}
+echo "$TEXT" | awk {'print $2 " " $1'}
 # you can get a very reach formatting and calculating (awk is a cli excel alternative) with awk
 
 # searching for files and operating on them
@@ -106,3 +106,8 @@ tail -f /var/log/my_log # will read log file from last 10 strings and continious
 # so this is pretty comfortable to use.
 less /var/log/my_log
 echo "$TEXT" | less
+
+# sometimes you need write log and continue forwarding this data to next pipe.
+# in this case use tee. this command will write all stdin to 'my_log' file,
+# and forward this data to stdout
+echo "$TEXT" | tee my_log | less

@@ -1,5 +1,7 @@
 # bash-course
 
+Download https://github.com/krokwen/bash-course
+
 ### intermediate bash course
 
 Note that Bash don't like `\r` wrap symbol. Use only `\n`
@@ -20,4 +22,4 @@ Contents:
 * Environment variables
 * POSIX introduction
 * Useful standard linux tools
-* Other stuff and tricks``
+* Other stuff and tricks

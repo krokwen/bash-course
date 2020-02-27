@@ -28,7 +28,7 @@ newFunction() {
 newFunction "ARG1" "ARG2"
 
 # another way to declare function
-function myAnotherFunc() {
+function myAnotherFunc {
   # return set an exit code for function
   return 1
 }

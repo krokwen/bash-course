@@ -17,9 +17,16 @@ cat ./file | less
 
 cat ./file >./another_file
 
+# > will overwrite file every time
+cat "qwe" > ./file
+
+# if you need append to file, use >>
+cat "asd" >> ./file
+
+
 # standart output to unix pipe == input from unix pipe
 
-cat ./file | less
+cat < ./file | less
 
 # stderr
 
